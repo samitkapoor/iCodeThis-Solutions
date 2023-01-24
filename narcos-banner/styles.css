@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+    background-color: rgb(213, 103, 103);
+    background-image: url("https://i.ibb.co/3FCrZnq/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    place-content: center;
+    align-items: center;
+
+
+}
+
+.banner {
+    height: 20%;
+    width: 80%;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.poster img {
+    object-fit: contain;
+    height: 20vh;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    color: rgb(247, 244, 240);
+    place-content: center;
+    align-items: center;
+}
+
+.narcos {
+    font-size: 64px;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    place-content: center;
+    align-items: center;
+
+    padding-right: 40px;
+}
+
+.button button {
+    background-color: rgb(229, 9, 19);
+    color: rgb(252, 245, 243);
+    height: 64px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: rgb(224, 79, 86);
+}
