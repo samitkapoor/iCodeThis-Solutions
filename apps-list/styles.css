@@ -1,0 +1,83 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    height: 80vh;
+}
+
+.header-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cards {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.less-height {
+    height: 50px;
+    width: 50px;
+}
+
+.tool-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 25vw;
+}
+
+.tool-name {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.tool-name img {
+    height: 20px;
+    width: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
