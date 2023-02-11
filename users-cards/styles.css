@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(246, 248, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 550px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 100px rgba(184, 185, 195, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 75px;
+    padding-right: 75px;
+
+    box-sizing: border-box;
+}
+
+.users-area {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.circle {
+    height: 180px;
+    width: 180px;
+    border-radius: 240px;
+    border: 4px solid rgb(207, 212, 229);
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: 7px solid rgb(207, 212, 229);
+    position: absolute;
+    object-fit: cover;
+    transition: 150ms;
+    cursor: pointer;
+}
+
+img:hover {
+    height: 65px;
+    width: 65px;
+}
+
+.top-image {
+    top: -25px;
+}
+
+.top-left-image {
+    top: 35px;
+    left: 5px;
+}
+
+.top-right-image {
+    top: 35px;
+    right: 5px;
+}
+
+.bottom-left-image {
+    bottom: 50px;
+    left: 35px;
+}
+
+.bottom-right-image {
+    bottom: 50px;
+    right: 35px;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.purple-button button {
+    background-color: rgb(107, 129, 237);
+    border: none;
+    color: rgb(239, 242, 253);
+    cursor: pointer;
+    box-shadow: 0px 5px 30px rgba(37, 38, 41, 0.25);
+
+    padding: 16px 40px;
+    border-radius: 50px;
+
+    transition: 150ms;
+}
+
+.purple-button button:active {
+    padding: 14px 36px;
+    background-color: rgb(137, 154, 239);
+    color: black;
+}
