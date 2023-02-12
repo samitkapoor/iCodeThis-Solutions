@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(49, 59, 93);
+}
+
+body {
+    background-color: rgb(243, 248, 254);
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-card {
+    background-color: white;
+
+    height: 400px;
+    width: 375px;
+
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.image-column {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-column img {
+    margin-top: 25px;
+
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+
+    border: 7px solid rgb(230, 239, 250);
+    border-radius: 80px;
+
+    transition: 150ms;
+}
+
+.image-column img:hover {
+    border: 7px solid rgb(158, 197, 245);
+    height: 70px;
+    width: 70px;
+}
+
+.text-column {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    padding-top: 40px;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h6 {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.icon-text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+
+    align-items: center;
+}
+
+.text {
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.shift-right {
+    gap: 6px;
+    padding-left: 3px;
+}
+
+p {
+    margin-top: 22px;
+    margin-right: 25px;
+
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    padding: 6px 5px;
+    margin-top: 20px;
+
+    background-color: transparent;
+
+    border: 2px solid rgb(199, 205, 225);
+    border-radius: 4px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 250ms;
+}
+
+button:active {
+    background-color: rgb(199, 205, 225);
+}
