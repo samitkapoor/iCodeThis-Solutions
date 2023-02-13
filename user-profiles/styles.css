@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.gradient {
+    height: 25vh;
+    width: 100%;
+    background:
+        linear-gradient(to right, rgb(122, 112, 211), rgb(204, 147, 207));
+}
+
+.gray-divider {
+    height: 15px;
+    width: 100%;
+    background-color: rgb(234, 233, 238);
+}
+
+.profile-collection {
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+
+    position: absolute;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 325px);
+    place-content: center;
+}
+
+.profile-card {
+    height: 300px;
+    width: 275px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(174, 174, 174);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding-top: 20px;
+
+    transition: 250ms;
+}
+
+.profile-card:hover {
+    box-shadow: 0px 0px 5px rgb(174, 174, 174);
+}
+
+.more-vert {
+    align-self: end;
+    margin-right: 20px;
+    color: rgb(70, 69, 69);
+    cursor: pointer;
+}
+
+.more-vert:hover {
+    color: red;
+}
+
+.profile-image img {
+    height: 100px;
+    width: 100px;
+
+    border: 2px solid rgb(227, 227, 227);
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: bold;
+    cursor: default;
+}
+
+.card-footer {
+    margin-top: 25px;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: 250ms;
+}
+
+.info:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.value {
+    font-weight: 900;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 950px) {
+
+    .profile-collection {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 325px);
+        place-content: start;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px
+    }
+}
+
+@media (max-width: 650px) {
+
+    .profile-collection {
+        height: 100vh;
+        width: 100vw;
+        background-color: transparent;
+
+        position: absolute;
+        top: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        place-content: start;
+        align-items: center;
+    }
+
+    .card-footer {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        padding-top: 10px;
+
+        height: 100%;
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
