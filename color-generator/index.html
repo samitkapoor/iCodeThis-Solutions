@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="toast" class="toast footer">
+      <h6>Color <span>#F9ACA7</span> copied to your clipboard</h6>
+    </div>
+    <h2>Color palette generator</h2>
+    <div class="color-set">
+      <div onclick="copyColorToast()" class="color-card">
+        <div id="color-one" class="color"></div>
+        <div class="color-code">#EEEDF0</div>
+      </div>
+      <div onclick="copyColorToast()" class="color-card">
+        <div id="color-two" class="color"></div>
+        <div class="color-code">#A1B5C1</div>
+      </div>
+      <div onclick="copyColorToast()" class="color-card">
+        <div id="color-three" class="color"></div>
+        <div class="color-code">#F9ACA7</div>
+      </div>
+      <div onclick="copyColorToast()" class="color-card">
+        <div id="color-four" class="color"></div>
+        <div class="color-code">#68747D</div>
+      </div>
+      <div onclick="copyColorToast()" class="color-card">
+        <div id="color-five" class="color"></div>
+        <div class="color-code">#CF365F</div>
+      </div>
+    </div>
+
+    <div class="generate-color">
+      <button>Generate palette</button>
+      <h5>Or just press the "Spacebar" to generate new palettes</h5>
+    </div>
+
+    <div class="footer">
+      <h6>
+        Click to copy individual color <span>&#x2022;</span> Press "C" to copy
+        palette
+      </h6>
+    </div>
+  </body>
+</html>
