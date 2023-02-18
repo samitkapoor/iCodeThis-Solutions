@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table 2</title>
+
+    <!-- styles for the page -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="pricing-table">
+      <div class="plan-choice-action">
+        <h1>Choose your plan</h1>
+        <div class="action-buttons">
+          <div onclick="selectAction()" id="monthly" class="action-button">
+            Monthly
+          </div>
+          <div
+            onclick="selectAction()"
+            id="yearly"
+            class="action-button un-selected"
+          >
+            Yearly
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-cards">
+        <div class="plan-card">
+          <h2>Starter</h2>
+          <div class="pricing-info">
+            <div class="price">$8.99 / month</div>
+            <div class="payment-period">Billed monthly</div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+            quasi quis culpa fugiat sequi, vitae illum suscipit modi fugit?
+            Earum unde in non ut!
+          </p>
+          <button id="monthly-button">Get started</button>
+        </div>
+        <div class="plan-card">
+          <h2>Professional</h2>
+          <div class="pricing-info">
+            <div class="price">$21.99 / month</div>
+            <div class="payment-period">Billed yearly</div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+            quasi quis culpa fugiat sequi, vitae illum suscipit modi fugit?
+          </p>
+          <button id="yearly-button">Get started</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
