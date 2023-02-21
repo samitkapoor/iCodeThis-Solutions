@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+
+    color: rgb(203, 206, 222);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    cursor: default;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(26, 24, 45);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 400px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(20, 19, 36);
+}
+
+h2 {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.user-cards {
+    margin-top: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 5px;
+
+    background-color: transparent;
+}
+
+.user-card {
+    height: 150px;
+    width: 125px;
+
+    background-color: rgb(26, 24, 45);
+
+    border-radius: 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.user-card * {
+    cursor: pointer;
+}
+
+.user-card:hover {
+    border: 3px solid white;
+    transform: translateY(-10px);
+}
+
+.user-card:active {
+    border: 0px solid white;
+    transform: translateY(0px);
+}
+
+h6 {
+    background-color: transparent;
+}
+
+.blue-card {
+    color: rgb(82, 141, 203);
+}
+
+.blue-card * {
+    color: rgb(82, 141, 203);
+}
+
+i {
+    font-size: 24px;
+    background-color: transparent;
+
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+button {
+    margin-top: 40px;
+    background-color: transparent;
+
+    border: 2px solid rgb(23, 30, 49);
+
+    padding: 8px 40px;
+    border-radius: 50px;
+
+    font-weight: bold;
+    color: rgb(82, 141, 203);
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+button:hover {
+    border: 2px solid rgb(82, 141, 203);
+}
+
+svg {
+    height: 64px;
+    width: 64px;
+}
+
+@media (max-width: 650px) {
+    .content {
+        height: 300px;
+        width: 400px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .user-cards {
+        margin-top: 20px;
+    }
+
+    .user-card {
+        height: 100px;
+        width: 75px;
+    }
+
+    svg {
+        height: 40px;
+        width: 40px;
+    }
+
+    i {
+        font-size: 16px;
+        background-color: transparent;
+
+        margin-top: 16px;
+        margin-bottom: 7px;
+    }
+
+    button {
+        margin-top: 30px;
+        background-color: transparent;
+
+        border: 2px solid rgb(23, 30, 49);
+
+        padding: 5px 30px;
+        border-radius: 50px;
+
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(82, 141, 203);
+
+        cursor: pointer;
+
+        transition: 150ms;
+    }
+
+    button:hover {
+        border: 2px solid rgb(82, 141, 203);
+    }
+}
