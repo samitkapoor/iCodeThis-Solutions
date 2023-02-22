@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    background-color: blue;
+
+    font-family: sans-serif;
+    color: white;
+
+    cursor: default;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(220, 221, 223);
+}
+
+.phone-screen {
+    height: 640px;
+    width: 350px;
+
+    position: relative;
+
+    display: grid;
+    grid-template-rows: 250px 300px 1fr;
+
+    box-shadow: 0px 0px 500px rgba(105, 111, 117, 0.553);
+
+    background-color: white;
+}
+
+/* paris */
+.weather-container {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+    background: url("https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+
+/* the top bar on the phone that shows battery percentage, wifi etc. */
+.notification-bar {
+    width: 100%;
+    height: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+    padding: 5px 5px;
+    box-sizing: border-box;
+
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.notification-bar * {
+    cursor: pointer;
+}
+
+.right-area,
+.left-area {
+    background-color: transparent;
+    display: flex;
+
+    gap: 2px;
+}
+
+/* signal strengtrh displaying on top left */
+.signal-strength {
+    width: 45px;
+    display: flex;
+    gap: 1px;
+
+    background-color: transparent;
+}
+
+.signal-strength .circle {
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 9px;
+
+    border: 1px solid white;
+}
+
+.signal-strength .empty-circle {
+    background-color: transparent;
+}
+
+/* all the text on the notification bar */
+.notification-bar-text {
+    background-color: transparent;
+
+    font-size: 10px;
+}
+
+.right-area i {
+    background-color: transparent;
+    font-size: 11px;
+}
+
+/* the time displaying at the center of the notification bar */
+.center {
+    position: absolute;
+    top: 5;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+/* location : paris, france */
+.location {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    font-size: 12px;
+    letter-spacing: 0.5px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+/* downwards arrow at the right of location */
+.chevron {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+
+    font-size: 12px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+/* 9 */
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+
+    background-color: transparent;
+    text-align: center;
+
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    right: 0;
+}
+
+/* Cloudy */
+.weather-description {
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+}
+
+/* 4 dots below temperature */
+.pagination {
+    height: 10px;
+    width: 100%;
+
+    position: absolute;
+    bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+
+    background-color: transparent;
+}
+
+.pagination .dots {
+    height: 3px;
+    width: 3px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.fade {
+    opacity: 0.7;
+}
+
+.days-information {
+    background-color: transparent;
+
+    box-sizing: border-box;
+    padding: 50px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    background-color: transparent;
+}
+
+.days {
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.day {
+    font-size: 18px;
+    color: rgb(154, 161, 173);
+
+    background-color: transparent;
+}
+
+.temp-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 18px;
+
+    background-color: transparent;
+}
+
+.temp-info .temp {
+    background-color: transparent;
+
+    color: rgb(141, 148, 164);
+    font-weight: 700;
+}
+
+.temp-info i {
+    background-color: transparent;
+
+    font-size: 18px;
+    color: rgb(181, 186, 195);
+}
+
+.add-location {
+    background-color: rgb(135, 142, 158);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.add-location i {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.add-location p {
+    background-color: transparent;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+.add-location:hover {
+    background-color: rgb(74, 77, 86);
+}
