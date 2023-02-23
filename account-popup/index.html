@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Popup</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <button onclick="togglePopUp()">
+      <div class="content">
+        <!-- profile image -->
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+        <div class="info">
+          <div class="name">NJ 🇧🇷</div>
+          <div class="username">@neymarjr</div>
+        </div>
+      </div>
+    </button>
+
+    <div id="pop" class="pop-up close-pop-up">
+      <button>
+        <div class="content">
+          <!-- profile image -->
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <div class="info">
+            <div class="name">NJ 🇧🇷</div>
+            <div class="username">@neymarjr</div>
+          </div>
+          <div class="circular-container">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+      </button>
+      <div class="pop-up-action">
+        <i class="fa-solid fa-plus"></i>
+        <div class="label">Connect other account</div>
+      </div>
+      <div class="divider"></div>
+      <div class="pop-up-badges">
+        <div class="badge">
+          <i class="fa-regular fa-life-ring"></i>
+          <div class="label">Support</div>
+        </div>
+        <div class="badge">
+          <i class="fa-solid fa-gear"></i>
+          <div class="label">Settings</div>
+        </div>
+        <div class="badge">
+          <i class="fa-regular fa-star"></i>
+          <div class="label">Upgrade</div>
+        </div>
+        <div class="badge">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <div class="label">Log out</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
