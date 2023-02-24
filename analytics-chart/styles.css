@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(225, 225, 226);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 60px 40px 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.054);
+
+    background-color: white;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.chart {
+    display: grid;
+    grid-template-columns: 60px 325px;
+    grid-template-rows: repeat(4, 60px);
+    align-items: start;
+    justify-items: end;
+    column-gap: 10px;
+}
+
+.value {
+    font-size: 12px;
+    color: rgb(63, 71, 80);
+    font-weight: 600;
+
+    margin-top: -7px;
+}
+
+.row {
+    border-top: 2px dashed rgb(223, 223, 223);
+}
+
+.top-row {
+    background-color: white;
+    height: 60px;
+    width: 325px;
+}
+
+.middle-top-row {
+    background-color: white;
+    height: 60px;
+    width: 325px;
+}
+
+.middle-bottom-row {
+    background-color: white;
+    height: 60px;
+    width: 325px;
+}
+
+.bottom-row {
+    background-color: white;
+    height: 60px;
+    width: 325px;
+
+    border-bottom: 2px solid rgb(223, 223, 223);
+}
+
+.months {
+    margin-top: 30px;
+    margin-right: 30px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: end;
+}
+
+.month {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.info {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.color-country {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.color {
+    height: 5px;
+    width: 7px;
+    border-radius: 10px;
+}
+
+.us {
+    background-color: rgb(82, 137, 204);
+}
+
+.ca {
+    background-color: rgb(60, 201, 201);
+}
+
+.au {
+    background-color: rgb(245, 166, 35);
+}
+
+.ch {
+    background-color: rgb(245, 88, 35);
+}
+
+.country {
+    font-size: 8px;
+    color: rgb(77, 84, 93);
+    font-weight: bold;
+}
+
+.bar {
+    position: absolute;
+    bottom: 110px;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    width: 6px;
+
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.418);
+}
+
+.jul {
+    height: 220px;
+
+    left: 140px;
+
+    background: linear-gradient(to top, rgb(82, 137, 204) 40%, rgb(60, 201, 201) 40% 70%, rgb(245, 166, 35) 70% 90%, rgb(245, 88, 35) 90%);
+}
+
+.aug {
+    height: 180px;
+
+    left: 190px;
+
+    background: linear-gradient(to top, rgb(82, 137, 204) 20%, rgb(60, 201, 201) 20% 65%, rgb(245, 166, 35) 65% 70%, rgb(245, 88, 35) 70%);
+}
+
+.sept {
+    height: 240px;
+
+    left: 240px;
+
+    background: linear-gradient(to top, rgb(82, 137, 204) 60%, rgb(60, 201, 201) 60% 75%, rgb(245, 166, 35) 75% 85%, rgb(245, 88, 35) 85%);
+}
+
+.oct {
+    height: 100px;
+
+    left: 290px;
+
+    background: linear-gradient(to top, rgb(82, 137, 204) 70%, rgb(60, 201, 201) 70% 80%, rgb(245, 166, 35) 80% 90%, rgb(245, 88, 35) 90%);
+}
+
+.nov {
+    height: 190px;
+
+    left: 340px;
+
+    background: linear-gradient(to top, rgb(82, 137, 204) 60%, rgb(60, 201, 201) 60% 70%, rgb(245, 166, 35) 70% 95%, rgb(245, 88, 35) 95%);
+}
+
+.dec {
+    height: 210px;
+
+    left: 390px;
+
+    background: linear-gradient(to top, rgb(82, 137, 204) 60%, rgb(60, 201, 201) 60% 70%, rgb(245, 166, 35) 70% 85%, rgb(245, 88, 35) 85%);
+}
+
+
+@media (max-width: 550px) {
+    .card {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 440px) {
+    .card {
+        transform: scale(0.6);
+    }
+}
