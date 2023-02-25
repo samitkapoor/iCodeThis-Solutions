@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="initializeCountdown()">
+    <main>
+      <h1 class="heading">Until new beginnings</h1>
+      <div class="countdown">
+        <div class="timer">
+          <div id="month-value" class="value"></div>
+          <div class="label">months</div>
+        </div>
+        <div class="timer">
+          <div id="days-value" class="value"></div>
+          <div class="label">days</div>
+        </div>
+        <div class="timer">
+          <div id="hours-value" class="value"></div>
+          <div class="label">hours</div>
+        </div>
+        <div class="timer">
+          <div id="minutes-value" class="value"></div>
+          <div class="label">minutes</div>
+        </div>
+        <div class="timer">
+          <div id="seconds-value" class="value"></div>
+          <div class="label">seconds</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

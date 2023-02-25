@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    font-family: monospace;
+
+    cursor: default;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: black;
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/5393.jpg");
+    background-size: cover;
+    background-position: center center
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.countdown {
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.value {
+    font-size: 150px;
+    font-weight: 900;
+    transition: 250ms;
+}
+
+.label {
+    font-size: 24px;
+    transition: 150ms;
+    font-weight: 600;
+}
+
+.timer:hover * {
+    color: black;
+}
+
+@media (max-width:1150px) {
+    .heading {
+        font-size: 45px;
+    }
+
+    .countdown {
+        width: 90%;
+    }
+
+    .value {
+        font-size: 125px;
+        font-weight: 900;
+    }
+
+    .label {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:850px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .countdown {
+        width: 90%;
+    }
+
+    .value {
+        font-size: 80px;
+        font-weight: 900;
+    }
+
+    .label {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:650px) {
+    .heading {
+        font-size: 24px;
+    }
+
+    .value {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .label {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:450px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .value {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .label {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
