@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+
+    cursor: default;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(250, 250, 250);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+
+    height: 115px;
+    padding-bottom: 10px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+/*  box inside the header tag that contains the content*/
+.header-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+/* Le Musique */
+.header-box h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(148, 168, 177);
+}
+
+/* search bar on the right side of "Le Musique" */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* magnifying glass beside the search bar */
+.search-bar i {
+    font-size: 20px;
+    color: rgb(148, 168, 177);
+}
+
+/* input field in the searchbar */
+.search-bar input {
+    outline: none;
+    border: none;
+
+    width: 70px;
+
+    font-size: 18px;
+    color: rgb(148, 168, 177);
+
+    cursor: text;
+}
+
+.search-bar input::placeholder {
+    font-size: 18px;
+    color: rgb(148, 168, 177);
+}
+
+/* whole content below the header */
+.content {
+    height: 100%;
+    width: 60vw;
+
+    padding: 15px 0px;
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* the explore tab banner */
+.banner {
+    height: 250px;
+    width: 100%;
+
+    background-image: url("https://thumbs.dreamstime.com/b/silhouettes-concert-crowd-front-bright-stage-lights-64551199.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+}
+
+/* pink to purple gradient on top of background image */
+.fade-bg {
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(to right, rgba(224, 61, 115, 0.8), rgba(205, 58, 228, 0.8));
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 30px;
+}
+
+/* the left column of the banner */
+.description {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.banner-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.banner-description {
+    font-size: 12px;
+    color: white;
+}
+
+.read-more {
+    margin-top: 15px;
+
+    padding: 10px 30px;
+    font-size: 12px;
+    color: rgb(148, 168, 177);
+    font-weight: bold;
+
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    gap: 5px;
+}
+
+/* each music card on the banner */
+.card {
+    height: 210px;
+    width: 150px;
+
+    background-color: white;
+
+    position: relative;
+
+    transition: 150ms;
+
+    cursor: pointer;
+}
+
+.card * {
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* the image of the music album */
+.music-poster {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* the rating and price row */
+.rating-price {
+    height: 7%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.rating {
+    font-size: 10px;
+    color: rgb(144, 161, 254);
+}
+
+.price {
+    font-size: 10px;
+    color: rgb(148, 168, 177);
+    font-weight: bold;
+}
+
+/* title of the album */
+.title {
+    height: 23%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(148, 168, 177);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .label {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(148, 168, 177);
+
+    margin-bottom: 10px;
+}
+
+.top-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.top-card {
+    height: 150px;
+    width: 300px;
+
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 150px 150px;
+
+    border: 1px solid rgb(238, 238, 238);
+
+    cursor: pointer;
+}
+
+.top-card * {
+    cursor: pointer;
+}
+
+.top-image {
+    height: 150px;
+    width: 150px;
+}
+
+.top-card .description {
+    height: 150px;
+    width: 150px;
+
+    box-sizing: border-box;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.album-details {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(148, 168, 177);
+
+    box-sizing: border-box;
+    padding: 0px 10px 0px 10px;
+
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
