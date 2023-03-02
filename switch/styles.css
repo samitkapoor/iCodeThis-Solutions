@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch {
+    height: 75px;
+    width: 180px;
+
+    border-radius: 75px;
+
+    background-color: rgb(215, 215, 215);
+
+    display: flex;
+    align-items: center;
+
+    padding: 0px 2px;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 70px;
+    border: 15px solid rgb(223, 42, 93);
+
+    background-color: white;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.move {
+    transform: translateX(110px);
+    border-color: rgb(79, 79, 79);
+}
