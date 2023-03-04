@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(227, 227, 227);
+
+    position: relative;
+}
+
+.verification-card {
+    height: 400px;
+    width: 750px;
+
+    border-radius: 20px;
+    border: 4px solid black;
+
+    box-shadow: 0px 0px 50px rgba(128, 128, 128, 0.441);
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pos1 {
+    position: absolute;
+    left: 4vw;
+    top: 4vw;
+}
+
+.pos2 {
+    position: absolute;
+    right: 4vw;
+    bottom: 4vw;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.smalltext,
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(95, 97, 103);
+}
+
+.gray-box {
+    background-color: rgb(240, 241, 247);
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.149);
+}
+
+.smalltext {
+    color: rgb(188, 193, 204);
+    font-weight: 600;
+}
+
+.smalltext span {
+    color: rgb(125, 144, 216);
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.smalltext span:hover {
+    text-decoration: underline;
+}
+
+.copy-code {
+    font-size: 64px;
+    letter-spacing: 2px;
+
+    background-color: rgb(219, 220, 224);
+
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.code {
+    display: flex;
+    gap: 20px;
+}
+
+.code-box {
+    padding: 30px 30px;
+    border: 2px solid rgb(190, 191, 193);
+    border-radius: 10px;
+
+    width: 40px;
+    font-size: 64px;
+    border: 4px solid rgb(188, 191, 195);
+    outline: none;
+    text-align: center;
+
+    color: rgb(39, 47, 65);
+}
+
+.code-box:focus {
+    border: 4px solid rgb(178, 190, 232);
+    outline: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.096);
+}
+
+.code-box::placeholder {
+    color: rgb(188, 191, 195);
+}
