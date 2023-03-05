@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    color: rgb(137, 156, 176);
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(21, 20, 45);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    position: relative;
+}
+
+.card {
+    height: 350px;
+
+    background: linear-gradient(to right, rgb(64, 199, 228), rgb(69, 141, 227));
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border-right: 2px solid rgb(59, 156, 200);
+}
+
+.heading {
+    color: rgb(26, 38, 64);
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.items .item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25px 1fr;
+
+    padding: 7px 30px 7px 30px;
+    margin-right: 80px;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.items .item,
+.items .item .icon,
+.items .item .label {
+    color: rgb(26, 38, 64);
+}
+
+.items .item:hover,
+.selected-item {
+    background-color: rgb(134, 213, 237);
+    border-radius: 50px;
+}
+
+.developers {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    border-right: 2px solid rgb(61, 141, 203);
+}
+
+.developers .items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.developers .items .item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25px 1fr;
+
+    padding: 7px 30px 7px 30px;
+    margin-right: 00px;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.developers .items .item,
+.developers .items .item .icon,
+.developers .items .item .label {
+    color: rgb(26, 38, 64);
+}
+
+.developers .items .item:hover,
+.developers .selected-item {
+    background-color: rgb(134, 213, 237);
+    border-radius: 50px;
+}
+
+.advert {
+    width: 155px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: rgb(21, 20, 45);
+    font-size: 14px;
+    font-weight: 700;
+
+    box-sizing: border-box;
+    margin: 0px 0px 0px 40px;
+}
+
+.ad-image {
+    height: 100px;
+    width: 150px;
+
+    border-radius: 20px;
+}
+
+.publishing-time,
+.author-name {
+    color: rgb(21, 20, 45);
+    font-size: 10px;
+}
+
+.publishing-time {
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.tab-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    font-size: 14px;
+
+    border-bottom: 2px solid transparent;
+
+    padding-bottom: 5px;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.tab-item i {
+    font-size: 12px;
+    transition: 150ms;
+}
+
+.tab-item:hover,
+.selected {
+    border-bottom: 2px solid rgb(61, 187, 214);
+}
+
+.tab-item:hover i,
+.tab-item:hover .label,
+.selected .label,
+.selected i {
+    color: rgb(54, 108, 172);
+}
+
+.tab-item:hover i,
+.selected i {
+    transform: rotate(180deg);
+}
