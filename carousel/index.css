@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(244, 239, 229);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 800px;
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 10px;
+
+    padding: 60px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    box-shadow: 0px 0px 50px rgba(188, 180, 168, 0.5);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.head-item {
+    padding: 7px 20px;
+
+    color: rgb(161, 159, 155);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.head-item:hover,
+.selected {
+    background-color: rgb(254, 248, 235);
+
+    color: black;
+
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button {
+    color: white;
+
+    background-color: rgb(235, 102, 73);
+
+    padding: 10px 30px;
+
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+footer button:hover {
+    background-color: rgb(238, 130, 106);
+}
+
+footer button:active {
+    background-color: rgb(235, 102, 73);
+}
+
+i {
+    cursor: pointer;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: 64px 672px 64px;
+    justify-items: center;
+
+    width: 800px;
+    align-items: center;
+}
+
+.carousel-gallery {
+    width: 672px;
+
+    display: flex;
+    gap: 24px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    transition: 500ms;
+}
+
+.carousel-gallery::-webkit-scrollbar {
+    width: 0px;
+}
+
+.carousel-gallery::-webkit-scrollbar-thumb {
+    width: 0px;
+}
+
+.carousel-gallery::-webkit-scrollbar-track {
+    width: 0px;
+}
+
+.carousel-item {
+    height: 200px;
+    width: 200px;
+
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.carousel-item img {
+    height: 135px;
+    width: 200px;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    object-fit: cover;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.date {
+    margin-top: 1px;
+
+    font-size: 10px;
+    text-align: center;
+    color: rgb(136, 133, 126);
+}
+
+i {
+    color: rgb(185, 183, 180);
+    font-size: 24px;
+}
