@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(47, 45, 63);
+
+    position: relative;
+}
+
+.chat-dialog {
+    height: 400px;
+    width: 280px;
+
+    position: absolute;
+    bottom: 160px;
+    right: 100px;
+
+    background-color: rgb(40, 38, 57);
+
+    box-shadow: 0px 0px 5px rgba(5, 5, 8, 0.344);
+
+    display: grid;
+    grid-template-rows: 50px 230px 120px;
+
+    border-radius: 5px;
+}
+
+.top-row {
+    width: 100%;
+    height: 50px;
+
+    background-color: rgb(255, 105, 105);
+
+    display: flex;
+    align-items: center;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.members {
+    height: 100%;
+    width: 87px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.one,
+.two,
+.three {
+    position: absolute;
+}
+
+.one {
+    left: 10px;
+}
+
+.two {
+    left: 30px;
+}
+
+.three {
+    left: 50px;
+}
+
+.profile-pic {
+    height: 25px;
+    width: 25px;
+
+    object-fit: cover;
+
+    border-radius: 32px;
+    border: 2px solid white;
+}
+
+.member-information {
+    color: rgb(255, 234, 234);
+}
+
+.names {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 8px;
+}
+
+.chat-messages {
+    box-sizing: border-box;
+    padding: 20px 10px 5px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    overflow-y: scroll;
+}
+
+.chat-messages::-webkit-scrollbar {
+    width: 1px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 56, 76);
+}
+
+.chat-message {
+    display: flex;
+    gap: 5px;
+}
+
+.text {
+    background-color: rgb(58, 56, 76);
+
+    font-size: 10px;
+    color: rgb(195, 194, 200);
+
+    padding: 16px 30px 16px 16px;
+
+    border-radius: 5px;
+
+    line-height: 16px;
+}
+
+footer {
+    background-color: rgb(58, 56, 76);
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.terms {
+    font-size: 9px;
+    color: rgb(196, 195, 201);
+
+    line-height: 16px;
+}
+
+.terms span {
+    cursor: pointer;
+    color: rgb(245, 106, 107);
+    text-decoration: underline;
+}
+
+footer button {
+    color: rgb(245, 106, 107);
+    background-color: transparent;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    border: 2px solid rgb(245, 106, 107);
+    border-radius: 50px;
+
+    padding: 7px 20px;
+    margin-top: 10px;
+
+    transition: 150ms;
+}
+
+footer button:hover {
+    background-color: rgb(245, 106, 107);
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+/* the button responsible for opening up the chat dialog box */
+.chatbox-btn {
+    height: 50px;
+    width: 50px;
+
+    background-color: rgb(255, 110, 110);
+
+    color: white;
+
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 32px;
+
+    transition: 100ms;
+}
+
+.chatbox-btn:hover {
+    background-color: rgb(253, 133, 133);
+}
+
+.chatbox-btn:active {
+    background-color: rgb(255, 99, 99);
+}
