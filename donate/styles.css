@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(33, 33, 59);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 700px;
+    padding: 80px;
+
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    background-color: rgb(47, 47, 79);
+
+    color: white;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-col h1 {
+    color: rgb(238, 238, 241);
+    font-weight: 600;
+}
+
+.left-col h5 {
+    color: rgb(238, 238, 241);
+    font-weight: 400;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.large-margin {
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 12px;
+    color: rgb(238, 238, 241);
+}
+
+.gift-btns {
+    margin-top: 5px;
+    background-color: rgb(33, 33, 59);
+    padding: 8px;
+    border-radius: 50px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.gift-btns button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    color: rgb(238, 238, 241);
+    font-weight: 300;
+
+    padding: 6px 20px;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+.gift-btns .selected {
+    background-color: rgb(47, 47, 79);
+}
+
+.currency-btns {
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.currency-btns button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    color: rgb(238, 238, 241);
+    font-weight: 600;
+
+    padding: 6px 15px;
+
+    border-radius: 50px;
+    border: 2px solid rgb(40, 40, 69);
+
+    cursor: pointer;
+}
+
+.currency-btns .selected {
+    background-color: #fefefe;
+    color: rgb(59, 59, 82);
+}
+
+.check-terms {
+    display: flex;
+    gap: 5px;
+    align-items: start;
+}
+
+.check-terms h5 {
+    font-weight: 300;
+    color: rgb(216, 216, 222);
+}
+
+.check-terms input {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+}
+
+.name-input {
+    margin-top: 5px;
+    width: 95%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgb(34, 34, 61);
+    border-radius: 5px;
+
+    color: rgb(238, 238, 241);
+    font-size: 12px;
+
+    padding: 10px;
+}
+
+.name-input::placeholder {
+    color: rgb(216, 216, 222);
+}
+
+span {
+    color: rgb(87, 103, 185);
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+.donate {
+    background-color: rgb(24, 101, 242);
+
+    color: white;
+    font-size: 12px;
+
+    margin-top: 35px;
+    padding: 12px 40px;
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
