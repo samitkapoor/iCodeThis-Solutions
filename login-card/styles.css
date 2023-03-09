@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(248, 239, 239);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 450px;
+    width: 650px;
+
+    background-color: white;
+
+    box-shadow: 0px 10px 20px rgba(39, 39, 39, 0.096);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 40px;
+
+    position: relative;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.small-text {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.extra-padding {
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.top-margin {
+    margin-top: 15px;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 30px;
+
+    border-radius: 4px;
+    border: 2px solid rgb(232, 237, 243);
+
+    width: 100%;
+}
+
+input::placeholder {
+    color: rgb(152, 158, 174);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.row .small-text {
+    color: rgb(74, 142, 165);
+    cursor: pointer;
+}
+
+.row button {
+    padding: 15px 30px;
+    background-color: rgb(4, 101, 134);
+
+    color: rgb(252, 253, 253);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+
+    background-color: rgba(185, 189, 193, 0.781);
+
+    margin: 35px 0px 25px 0px;
+}
+
+.center {
+    text-align: center;
+    color: rgb(155, 160, 177);
+}
+
+.row .social-btn {
+    background-color: transparent;
+    color: rgb(62, 62, 62);
+    font-weight: 600;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    box-shadow: none;
+
+    padding: 5px 0px;
+
+    border: 1px solid rgb(180, 185, 191);
+    cursor: pointer;
+}
+
+.row .social-btn img {
+    height: 22px;
+    width: 22px;
+    object-fit: cover;
+}
+
+.margin-top {
+    margin-top: 40px;
+
+    color: black;
+}
+
+.margin-top span {
+    color: rgb(74, 142, 165);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right-col {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.water-img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    height: 30px;
+    width: 30px;
+    background-color: rgba(229, 245, 246, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    outline: none;
+    border: none;
+    border-radius: 100px;
+
+    cursor: pointer;
+}
