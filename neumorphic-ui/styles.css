@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(246, 248, 252);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.top-row {
+    background-color: rgb(242, 243, 249);
+
+    box-shadow: 0px 10px 40px rgba(164, 164, 171, 0.493),
+        10px 0px 40px rgba(164, 164, 171, 0.493),
+        0px -10px 40px rgb(255, 255, 255),
+        -10px 0px 40px rgb(255, 255, 255);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 30px 40px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 25px;
+
+    transition: 150ms;
+
+    cursor: pointer;
+}
+
+.item:hover {
+    box-shadow: 0px 10px 40px rgba(164, 164, 171, 0.493),
+        10px 0px 40px rgba(164, 164, 171, 0.493),
+        0px -10px 40px rgb(255, 255, 255),
+        -10px 0px 40px rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.circle-icon {
+    height: 64px;
+    width: 64px;
+
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 20px;
+}
+
+.red {
+    background-color: rgb(253, 113, 112);
+}
+
+.yellow {
+    background-color: rgb(252, 171, 112);
+}
+
+.purple {
+    background-color: rgb(127, 122, 254);
+}
+
+.label {
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.middle-row {
+    text-align: center;
+    background-color: rgb(230, 233, 243);
+
+    padding: 15px 0px;
+
+    font-weight: 600;
+    font-size: 12px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 10px 2px rgb(221, 223, 233)inset,
+        10px 0px 2px rgb(221, 223, 233)inset,
+        0px -10px 2px rgb(237, 238, 247)inset,
+        -10px 0px 2px rgb(237, 238, 247)inset;
+}
+
+.middle-row span {
+    color: rgb(83, 111, 226);
+
+    cursor: pointer;
+}
+
+.middle-row span:hover {
+    text-decoration: underline;
+}
+
+.bottom-row {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-row button {
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 50px;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    box-shadow: 0px 10px 40px rgba(164, 164, 171, 0.493),
+        10px 0px 40px rgba(164, 164, 171, 0.493),
+        0px -10px 40px rgb(255, 255, 255),
+        -10px 0px 40px rgb(255, 255, 255);
+
+    font-weight: 600;
+}
+
+.white-text {
+    color: white;
+}
+
+.purple-text {
+    color: rgb(83, 111, 226);
+}
