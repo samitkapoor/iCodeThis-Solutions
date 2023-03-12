@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    color: rgb(193, 197, 242);
+
+    cursor: default;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    box-sizing: border-box;
+    padding: 100px;
+
+    background-color: rgb(19, 24, 50);
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+
+    position: relative;
+}
+
+.progress-card {
+    padding: 50px 70px 70px 50px;
+
+    background-color: rgb(29, 32, 67);
+
+    border-radius: 10px;
+}
+
+p {
+    margin-top: 10px;
+    font-family: system-ui;
+}
+
+.progress-items {
+    margin-top: 40px;
+    display: flex;
+    gap: 5px;
+}
+
+.progress-item {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(17, 22, 46);
+
+    border-radius: 10px;
+}
+
+#one {
+    background: linear-gradient(to right, rgb(78, 98, 254), rgb(73, 101, 251));
+}
+
+#two {
+    background: linear-gradient(to right, rgb(71, 137, 245), rgb(75, 136, 254));
+}
+
+#three {
+    background: linear-gradient(to right, rgb(77, 163, 245), rgb(81, 165, 246));
+}
+
+#four {
+    background: linear-gradient(to right, rgb(73, 190, 244), rgb(77, 190, 238));
+}
+
+#five {
+    background: linear-gradient(to right, rgb(77, 212, 233), rgb(67, 216, 234));
+}
+
+#six {
+    background: linear-gradient(to right, rgb(74, 218, 206), rgb(77, 216, 208));
+}
+
+h5 {
+    margin-top: 10px;
+    font-family: system-ui;
+    font-weight: 400;
+}
+
+.blue-box {
+    height: 275px;
+    width: 220px;
+    background-color: rgb(74, 163, 246);
+
+    border-radius: 15px;
+
+    position: absolute;
+    top: 100px;
+    right: -270px;
+}
+
+.check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: rgb(27, 33, 67);
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    position: absolute;
+    top: 40px;
+    right: -50px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.space {
+    height: 6px;
+}
+
+.label {
+    font-size: 18px;
+    font-family: system-ui;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.label div {
+    margin-bottom: 4px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(177, 182, 219);
+    border-radius: 20px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: rgb(75, 98, 250);
+
+}
+
+@media (max-width: 932px) {
+    body {
+        padding-top: 60px;
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .blue-box {
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+
+    .check-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        background-color: rgb(27, 33, 67);
+
+        padding: 40px;
+
+        border-radius: 15px;
+
+        position: absolute;
+        top: 40px;
+        right: -50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .space {
+        height: 6px;
+    }
+
+    .label {
+        font-size: 18px;
+        font-family: system-ui;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .label div {
+        margin-bottom: 4px;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgb(177, 182, 219);
+        border-radius: 20px;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--form-control-color);
+    }
+
+    input[type="checkbox"]:checked::before {
+        transform: scale(1);
+        background-color: rgb(75, 98, 250);
+
+    }
+}
