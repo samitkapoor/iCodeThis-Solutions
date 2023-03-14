@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(37, 44, 74);
+}
+
+h4 {
+    margin-top: 15px;
+
+    font-weight: 500;
+    color: rgb(125, 128, 154);
+}
+
+.cards {
+    margin-top: 20px;
+
+    width: 820px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background-color: rgb(246, 248, 254);
+}
+
+.card {
+    width: 400px;
+    height: 175px;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    transition: 150ms;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 20px rgb(207, 212, 246);
+}
+
+.circle-icon {
+    height: 80px;
+    width: 80px;
+
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px rgb(190, 191, 196),
+        0px 10px 5px rgb(190, 191, 196);
+
+    font-size: 30px;
+    color: rgb(255, 121, 26);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(54, 58, 82);
+}
+
+.text .para {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(125, 127, 139);
+}
+
+footer {
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foot-item {
+    color: rgb(128, 137, 197);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.press:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .cards {
+        margin-top: 20px;
+
+        width: 620px;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        background-color: rgb(246, 248, 254);
+    }
+
+    .card {
+        width: 300px;
+        height: 175px;
+
+        background-color: white;
+
+        cursor: pointer;
+
+        transition: 150ms;
+
+        display: grid;
+        grid-template-columns: 25% 75%;
+        gap: 10px;
+
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    .card:hover {
+        box-shadow: 0px 10px 20px rgb(207, 212, 246);
+    }
+
+    .circle-icon {
+        height: 64px;
+        width: 64px;
+
+        border-radius: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        box-shadow: 0px 0px 20px rgb(190, 191, 196),
+            0px 10px 5px rgb(190, 191, 196);
+
+        font-size: 24px;
+        color: rgb(255, 121, 26);
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .text .title {
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(54, 58, 82);
+    }
+
+    .text .para {
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(125, 127, 139);
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .cards {
+        width: 400px;
+    }
+
+    .card {
+        width: 400px;
+        height: auto;
+        grid-template-columns: 30% 70%;
+        gap: 0px;
+    }
+
+    .circle-icon {
+        height: 80px;
+        width: 80px;
+
+        font-size: 30px;
+        color: rgb(255, 121, 26);
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text .title {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(54, 58, 82);
+    }
+
+    .text .para {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(125, 127, 139);
+    }
+}
