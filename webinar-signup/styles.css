@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    position: relative;
+
+    background-color: rgb(35, 38, 49);
+}
+
+.webinar-details {
+    width: 40%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 40px 90px 40px 40px;
+
+    background-color: rgb(35, 38, 49);
+
+    position: relative;
+}
+
+.date-time {
+    font-size: 12px;
+    color: gainsboro;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: gainsboro;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    position: relative;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.input-field .post {
+    color: gainsboro;
+}
+
+select,
+textarea,
+input {
+    background-color: transparent;
+    padding: 12px 8px;
+
+    width: 210px;
+
+    border: 1px solid rgb(62, 64, 75);
+    outline: none;
+}
+
+select {
+    width: 230px;
+}
+
+select option {
+    color: black;
+}
+
+textarea {
+    width: 460px;
+}
+
+label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+label input {
+    width: auto;
+}
+
+form button {
+    padding: 10px 30px;
+
+    color: black;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+label .text {
+    font-size: 12px;
+    color: gainsboro;
+}
+
+.registered-members {
+    width: 40%;
+    height: 100%;
+
+    background-color: rgb(43, 46, 57);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 0px 70px 0px 70px;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 100px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    cursor: pointer;
+
+    transition: 150ms;
+}
+
+.icons i:hover {
+    color: rgb(72, 103, 170);
+}
+
+.guests-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+.guests-section h4 {
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.guest {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guest .profile-image {
+    height: 52px;
+    width: 52px;
+    border-radius: 64px;
+    object-fit: cover;
+}
+
+.about-guest {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-guest .name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.post {
+    font-size: 12px;
+    font-weight: 400;
+}
