@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(248, 249, 253);
+
+    box-sizing: border-box;
+    padding: 50px;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+main {
+    width: 675px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 100px rgba(128, 128, 128, 0.411);
+
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 70px 60px 70px 60px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+h4 {
+    box-sizing: border-box;
+    padding: 0px 70px;
+
+    text-align: center;
+    font-weight: 500;
+}
+
+.box {
+    height: 30px;
+}
+
+.accordion {
+    border-bottom: 3px solid rgb(241, 241, 254);
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+
+    color: rgb(73, 72, 83);
+}
+
+.title .action {
+    height: 24px;
+    width: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.expand {
+    margin-top: 20px;
+    margin-right: 50px;
+
+    display: none;
+}
+
+.expand .text {
+    font-size: 14px;
+}
+
+.expand button {
+    margin-top: 15px;
+
+    background-color: transparent;
+
+    outline: none;
+    border: 2px solid rgb(222, 230, 246);
+
+    padding: 6px 25px;
+
+    color: black;
+    font-weight: bold;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    transition: 400ms;
+}
+
+.expand button:hover {
+    background-color: black;
+    color: white;
+}

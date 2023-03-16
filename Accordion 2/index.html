@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main>
+    <h2>The Barebones Of An Accordian</h2>
+    <h4>Highlighting important details of a section and revealing more details upon a tap or click, if necessary.</h4>
+    <div class="box"></div>
+    <div class="accordion">
+      <div class="title">
+        <div class="leading">When and how it should be used?</div>
+        <div onclick="onClick()" class="action">
+          <i id="one-1" class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div id="1" class="expand">
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab ipsam facere minus harum in error exercitationem numquam pariatur soluta? Iusto ullam fuga mollitia quod molestias ducimus libero laboriosam excepturi?
+        </div>
+        <button>Read more</button>
+        </di>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="title">
+        <div class="leading">What's an accordion?</div>
+        <div onclick="onClick()" class="action">
+          <i id="two-2" class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div id="2" class="expand">
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab ipsam facere minus harum in error exercitationem numquam pariatur soluta? Iusto ullam fuga mollitia quod molestias ducimus libero laboriosam excepturi?
+        </div>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="title">
+        <div class="leading">What if the user clicks on a collapsed card while another card is open?</div>
+        <div onclick="onClick()" class="action">
+          <i id="three-3" class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div id="3" class="expand">
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab ipsam facere minus harum in error exercitationem numquam pariatur soluta? Iusto ullam fuga mollitia quod molestias ducimus libero laboriosam excepturi?
+        </div>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="title">
+        <div class="leading">How to choose an icon to indicate expansion?</div>
+        <div onclick="onClick()" class="action">
+          <i id="four-4" class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div id="4" class="expand">
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab ipsam facere minus harum in error exercitationem numquam pariatur soluta? Iusto ullam fuga mollitia quod molestias ducimus libero laboriosam excepturi?
+        </div>
+        <button>Read more</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
