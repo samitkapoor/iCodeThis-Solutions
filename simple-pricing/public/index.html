@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Pricing</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="h-screen w-screen bg-background flex flex-col md:flex-row gap-10 items-center justify-center"
+  >
+    <div
+      class="w-72 px-8 py-10 bg-white rounded-xl shadow-lg shadow-gray-400 font-sans text-customIndigo"
+    >
+      <h3 class="font-bold">Free</h3>
+      <h4 class="text-sm">For freelancers</h4>
+      <h1 class="font-bold text-5xl mt-5">$0</h1>
+      <!-- features -->
+      <div class="mt-16 ml-4 h-40">
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">1 users</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">10 downloads per month</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">Raster files</div>
+        </div>
+      </div>
+      <button class="w-full py-3 bg-customIndigo rounded-full text-white">
+        Subscribe
+      </button>
+    </div>
+
+    <div
+      class="w-72 px-8 py-10 bg-customIndigo text-white rounded-xl shadow-lg shadow-gray-400 font-sans"
+    >
+      <h3 class="font-bold">Pro</h3>
+      <h4 class="text-sm">For agencies</h4>
+      <h1 class="font-bold text-5xl mt-5">$40</h1>
+      <!-- features -->
+      <div class="mt-16 ml-4 h-40">
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">3 users</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">Unlimited downloads</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">Fully-editable files</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">Custom packs</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-feather="check-circle" class="h-4 w-4"></i>
+          <div class="mb-1 text-sm">200+ custom icons</div>
+        </div>
+      </div>
+      <button
+        class="w-full py-3 bg-white text-customIndigo font-semibold rounded-full"
+      >
+        Subscribe
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
