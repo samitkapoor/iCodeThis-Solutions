@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Layout</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="w-screen h-screen flex justify-center bg-gradient-to-br from-purple-300 to-blue-400"
+  >
+    <div class="flex flex-wrap gap-4 max-w-xl w-full">
+      <!-- horizontal top box -->
+      <div
+        class="max-w-xl w-full max-h-60 h-full bg-white rounded-lg shadow-lg mt-24 grid grid-cols-5 overflow-hidden"
+      >
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661602295037-46d78aea1096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          alt=""
+          class="object-cover max-h-60 h-full w-full col-span-2"
+        />
+        <div
+          class="flex flex-col items-start justify-center max-h-60 h-full box-border col-span-3 pl-5 pr-20"
+        >
+          <!-- badge -->
+          <div class="bg-gray-200 py-1 px-2 rounded-sm font-bold text-xs">
+            Technology
+          </div>
+          <h2 class="font-bold text-lg mt-1 mr-2 leading-6">
+            Myspace Layouts The Missing Element
+          </h2>
+          <h5 class="text-xs">Sep 10, 2020</h5>
+          <p class="text-xs mt-3">
+            Finding the perfect learning tool for Flash is a daunting task to
+            any novice web developer. One can find help in a number of ways
+            through books, friends and private tutors.
+          </p>
+        </div>
+      </div>
+      <!-- vertical small box -->
+      <div
+        class="max-h-96 h-full w-60 rounded-xl bg-white grid grid-rows-5 overflow-hidden p-3 shadow-xl"
+      >
+        <div class="h-full w-full row-span-2 relative">
+          <img
+            src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+            class="object-cover h-full w-full rounded-md"
+          />
+          <div
+            class="bg-gray-200 py-1 px-2 rounded-sm font-bold text-xs absolute bottom-2 left-2"
+          >
+            Technology
+          </div>
+        </div>
+        <div class="row-span-3">
+          <h2 class="font-bold text-lg mt-3 leading-6">
+            Cleaning And Organizing Your Mobile
+          </h2>
+          <h5 class="text-xs">Sep 2, 2020</h5>
+          <p class="text-xs mt-3 pr-3">
+            Finding the perfect learning tool for Flash is a daunting task to
+            any novice web developer. One can find help in a number of ways
+            through books, friends and private tutors.
+          </p>
+        </div>
+      </div>
+      <!-- small landscape box -->
+      <div
+        class="h-56 w-80 bg-white rounded-lg shadow-xl grid grid-cols-5 gap-3 p-3"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1596436643132-6e58c3ae4cd4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          alt=""
+          class="w-full col-span-2 rounded-md object-cover"
+        />
+        <div class="w-full h-full col-span-3">
+          <!-- badge -->
+          <div
+            class="bg-gray-200 py-1 px-2 rounded-sm font-bold text-xs inline-block"
+          >
+            Technology
+          </div>
+          <h2 class="font-bold text-lg mt-1 leading-6">What S Your Passion</h2>
+          <h5 class="text-xs">Sep 2, 2020</h5>
+          <p class="text-xs mt-3">
+            Finding the perfect learning tool for Flash is a daunting task to
+            any novice web developer. One can find help in a number of ways
+            through books, friends and private tutors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
