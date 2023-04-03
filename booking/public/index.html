@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="h-screen w-screen flex items-center justify-center bg-background"
+  >
+    <!-- card -->
+    <div
+      class="h-96 w-72 rounded-xl shadow-2xl bg-white grid grid-rows-5 overflow-hidden"
+    >
+      <div class="row-span-2 h-full w-full bg-darkPurple p-6">
+        <div class="flex gap-5 font-semibold justify-between items-start">
+          <h2 class="text-white text-xl">Where are do you want to play?</h2>
+          <div class="rounded-full bg-[#372d5c] p-1 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#7179a2"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- radio buttons -->
+        <div class="flex items-center gap-8 mt-6">
+          <div class="flex items-center gap-1 cursor-pointer">
+            <input
+              type="radio"
+              id="bergen"
+              class="h-4 w-4 cursor-pointer"
+              checked
+            />
+            <label for="bergen" class="text-white cursor-pointer">Bergen</label>
+          </div>
+          <div class="flex items-center gap-1 cursor-pointer">
+            <input type="radio" id="oslo" class="h-4 w-4 cursor-pointer" />
+            <label for="oslo" class="text-white cursor-pointer">Oslo</label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-full w-full row-span-3 flex flex-col justify-between p-5 pb-10"
+      >
+        <h2 class="text-darkPurple font-bold text-xl">Choose the party size</h2>
+        <div class="mt-3 flex items-center justify-between">
+          <div
+            class="group flex flex-col items-center justify-center p-2 px-4 rounded-md border-2 transition hover:bg-darkPurple hover:cursor-pointer"
+          >
+            <div
+              class="text-4xl font-bold text-darkPurple transition group-hover:text-white"
+            >
+              2
+            </div>
+            <h4
+              class="text-xs text-darkPurple font-semibold transition group-hover:text-white"
+            >
+              people
+            </h4>
+          </div>
+
+          <div
+            class="group flex flex-col items-center justify-center p-2 px-4 rounded-md border-2 transition hover:bg-darkPurple hover:cursor-pointer"
+          >
+            <div
+              class="text-4xl font-bold text-darkPurple transition group-hover:text-white"
+            >
+              4
+            </div>
+            <h4
+              class="text-xs text-darkPurple font-semibold transition group-hover:text-white"
+            >
+              people
+            </h4>
+          </div>
+
+          <div
+            class="group flex flex-col items-center justify-center p-2 px-4 rounded-md border-2 transition hover:bg-darkPurple hover:cursor-pointer"
+          >
+            <div
+              class="text-4xl font-bold text-darkPurple transition group-hover:text-white"
+            >
+              6
+            </div>
+            <h4
+              class="text-xs text-darkPurple font-semibold transition group-hover:text-white"
+            >
+              people
+            </h4>
+          </div>
+        </div>
+        <button
+          class="mt-5 bg-[#d81e61] transition hover:bg-[#d83973] rounded-md shadow-md shadow-[#d81e6280] flex items-center justify-center gap-2 py-2"
+        >
+          <h4 class="text-white text-xs">Continue</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
