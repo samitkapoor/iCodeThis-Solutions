@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancel Form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="flex flex-col items-center justify-center h-screen w-screen bg-[#fcf6ed]"
+  >
+    <h1 class="text-[#a176f6] font-bold text-3xl tracking-wide">
+      Your account is closed
+    </h1>
+    <h5 class="text-[#96928a] mt-1">
+      Could you spare a minute to tell us how we could improve?
+    </h5>
+    <div class="flex flex-col py-7 px-5 bg-white shadow-lg mt-10">
+      <p class="text-[#96928a]">
+        How likely is that you would recommend us to your friends or colleagues?
+      </p>
+      <!-- rating buttons -->
+      <div class="flex gap-2 mt-2">
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">1</div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">2</div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">3</div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">4</div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">5</div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">6</div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">7</div>
+        <div class="bg-[#eb8000] text-white p-2 px-4 rounded-md cursor-pointer">
+          8
+        </div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">9</div>
+        <div class="bg-[#f9f7fa] p-2 px-4 rounded-md cursor-pointer">10</div>
+      </div>
+      <p class="text-[#96928a] mt-4">How can we improve?</p>
+      <textarea
+        name="suggestions"
+        id="suggestions"
+        cols="30"
+        rows="5"
+        placeholder="Type your suggestion here"
+        class="placeholder:text-[#dcdcdc] p-4 border-2 mt-2"
+      ></textarea>
+      <button class="mt-4 text-[#ed7f00] cursor-pointer">Submit</button>
+    </div>
+  </body>
+</html>
