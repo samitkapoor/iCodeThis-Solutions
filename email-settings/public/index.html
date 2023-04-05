@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Settings</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="h-screen w-screen bg-customIndigo-700 flex items-center justify-center"
+  >
+    <!-- form -->
+    <div class="w-96 bg-customIndigo-500 px-10 py-12 box-border rounded-xl">
+      <div class="text-gray-300 text-lg mb-5">Get email updates when:</div>
+      <!-- checkboxes -->
+      <div class="checkbox-container">
+        <input type="checkbox" id="cb1" />
+        <label for="cb1">You're the owner</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="cb2" />
+        <label for="cb2">You're the assignee</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="cb3" checked />
+        <label for="cb3">You're the reporter</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="cb4" checked />
+        <label for="cb4">Someone mentions you</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="cb5" />
+        <label for="cb5">Someone is assigning you</label>
+      </div>
+      <div class="mt-8 mb-10 bg-customIndigo-700 text-[#9f9faf] p-5 text-xs">
+        You may also receive other email notifications your admin configured.
+        <span class="text-[#4d42b2] underline">Learn more</span>
+      </div>
+      <div class="text-gray-300 text-lg mb-5">Email format</div>
+      <div class="radio-container">
+        <input type="radio" name="email-format" id="html" checked />
+        <label for="html">HTML</label>
+      </div>
+      <div class="radio-container">
+        <input type="radio" name="email-format" id="text" />
+        <label for="text">Text</label>
+      </div>
+      <button
+        class="bg-[#716bf4] text-gray-200 w-full py-5 rounded-md mt-10 cursor-pointer"
+      >
+        Save
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+.radio-container,
+.checkbox-container {
+  @apply flex items-center mb-2 ml-4;
+}
+
+.radio-container input[type="radio"],
+.checkbox-container input[type="checkbox"] {
+  @apply opacity-0 absolute;
+}
+
+.radio-container label,
+.checkbox-container label {
+  @apply text-[#d7dad8] text-sm flex gap-2.5 items-center cursor-pointer;
+}
+
+.radio-container label::before,
+.checkbox-container label::before {
+  @apply h-5 w-5 border-2 border-gray-500 rounded-sm content-[""]  cursor-pointer flex items-center justify-center;
+}
+
+.radio-container label::before {
+  @apply rounded-full;
+}
+
+.radio-container:hover label::before,
+.checkbox-container:hover label::before {
+  @apply bg-[#716bf4];
+}
+
+.checkbox-container input[type="checkbox"]:checked + label::before {
+  @apply bg-[#716bf4] content-["\002714"] text-white;
+}
+
+.radio-container input[type="radio"]:checked + label::before {
+  @apply bg-white border-[7px] border-[#716af5];
+}
