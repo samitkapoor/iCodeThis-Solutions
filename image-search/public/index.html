@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="w-screen h-screen flex items-center justify-center bg-[#f6f8fa]">
+    <div class="bg-white flex gap-2 items-center p-2">
+      <input
+        type="text"
+        placeholder="Search for images"
+        class="w-96 pl-3 border-none outline-none placeholder:font-bold placeholder:text-[#b7bbc1] placeholder:tracking-wide"
+      />
+      <div
+        class="flex gap-1 items-center cursor-pointer hover:bg-gray-200 transition p-4 px-4 ronded-md"
+      >
+        <h4 class="text-black font-bold tracking-wide">All images</h4>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="3"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </div>
+      <button
+        class="flex gap-2 items-center bg-[#4a91e2] text-white p-4 px-8 rounded-md cursor-pointer hover:opacity-70 transition"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+        <h4 class="text-white font-bold tracking-wide">Search</h4>
+      </button>
+    </div>
+  </body>
+</html>
