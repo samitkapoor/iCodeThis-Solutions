@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson Feedback</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="h-screen w-screen flex items-center justify-center bg-[#eeecf4]">
+    <!-- card -->
+    <div class="bg-white py-16 px-14 rounded-xl shadow-md">
+      <h2 class="font-bold text-2xl text-center">Was this lesson useful?</h2>
+      <!-- badges -->
+      <div class="flex gap-3 items-center justify-center mt-10">
+        <!-- badge -->
+        <div
+          class="flex gap-2 items-center justify-center bg-[#675aff] p-4 text-white rounded-md cursor-pointer shadow-md hover:shadow-lg hover:shadow-[#675aff] shadow-[#675aff] transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
+            />
+          </svg>
+          <h4>Yes, it was great!</h4>
+        </div>
+        <div
+          class="flex gap-2 items-center justify-center bg-[#675aff] p-4 text-white rounded-md cursor-pointer shadow-md hover:shadow-lg hover:shadow-[#675aff] shadow-[#675aff] transition"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+          >
+            <rect
+              x="3"
+              y="3"
+              width="18.2842"
+              height="18.2842"
+              rx="9.14208"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8 10H8.01"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16 10H16.01"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <line
+              x1="10.3994"
+              y1="15.7131"
+              x2="13.8847"
+              y2="15.7131"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4>Sort of, thanks!</h4>
+        </div>
+        <div
+          class="flex gap-2 items-center justify-center bg-[#675aff] p-4 text-white rounded-md cursor-pointer shadow-md hover:shadow-lg hover:shadow-[#675aff] shadow-[#675aff] transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.182 16.318A4.486 4.486 0 0012.016 15a4.486 4.486 0 00-3.198 1.318M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
+            />
+          </svg>
+          <h4>Not really</h4>
+        </div>
+      </div>
+      <h5 class="text-center mt-10 mb-10 text-black font-semibold">
+        Got a suggestion?
+        <span class="underline cursor-pointer">Let us know</span>
+      </h5>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-3">
+        <div
+          class="bg-[#fcfbff] border-2 border-[#e9e7f2] rounded-md w-full flex items-start gap-3 flex-col p-5"
+        >
+          <h4 class="font-bold leading-5">Need more <br />help?</h4>
+          <div class="flex items-center">
+            <h5 class="text-[#695cff] font-semibold text-xs cursor-pointer">
+              Contact support
+            </h5>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#695cff"
+              class="w-4 h-4 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="bg-[#fcfbff] border-2 border-[#e9e7f2] rounded-md w-full flex items-start gap-2 flex-col p-5"
+        >
+          <h4 class="font-bold leading-5">Need more <br />help?</h4>
+          <div class="flex items-center">
+            <h5 class="text-[#695cff] font-semibold text-xs cursor-pointer">
+              Contact support
+            </h5>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#695cff"
+              class="w-4 h-4 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
