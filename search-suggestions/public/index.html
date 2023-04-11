@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Suggestions</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="h-screen w-screen flex items-center justify-center bg-[#f1f4ff]">
+    <div class="grid grid-cols-12 w-[400px]">
+      <div
+        class="col-span-10 bg-white rounded-l-2xl flex items-center gap-2 justify-between p-3 pl-4"
+      >
+        <input
+          type="text"
+          placeholder="Search"
+          class="w-full outline-none border-none"
+        />
+        <!-- badge -->
+        <div
+          class="flex items-center justify-center gap-1 bg-[#f8f9fe] border-[#ece8f9] border-2 px-2 py-1 rounded-md cursor-pointer"
+        >
+          <h3 class="text-sm">EN</h3>
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </div>
+      </div>
+      <!-- search button -->
+      <div
+        class="bg-[#2d3e52] h-[62px] w-[66px] col-span-2 rounded-r-2xl flex items-center justify-center cursor-pointer"
+      >
+        <i class="fa-solid fa-magnifying-glass text-white text-2xl"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/885853d9e4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
