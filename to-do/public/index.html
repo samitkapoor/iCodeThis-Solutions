@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body class="h-screen w-screen flex items-center justify-center bg-[#eeecea]">
+    <div
+      class="w-[300px] pb-5 bg-white flex flex-col justify-start items-center overflow-hidden shadow-2xl"
+    >
+      <div
+        class="row-span-1 h-[100px] w-[400px] bg-[#a7c4e3] rounded-b-[50%] flex flex-col items-center justify-center relative shadow-lg shadow-[#bbc0c77a]"
+      >
+        <i
+          class="fa-solid fa-arrow-left text-white absolute left-[70px] top-[23px] cursor-pointer"
+        ></i>
+        <h3 class="text-white font-semibold text-lg">Thu, July 6, 2017</h3>
+        <h4 class="text-white font-extralight text-sm">6 tasks</h4>
+      </div>
+      <div
+        class="w-[300px] h-full row-span-5 flex flex-col justify-start items-center gap-5 px-7 mt-7"
+      >
+        <div
+          id="1"
+          class="items w-full flex justify-between items-center cursor-pointer"
+        >
+          <h4 id="label1" class="check">Test use cases for the new tool</h4>
+          <i
+            id="icon1"
+            class="fa-regular fa-circle-check tick cursor-pointer"
+          ></i>
+        </div>
+        <div
+          id="2"
+          class="items w-full flex justify-between items-center cursor-pointer"
+        >
+          <h4 id="label2" class="check">Send out emails</h4>
+          <i
+            id="icon2"
+            class="fa-regular fa-circle-check tick cursor-pointer"
+          ></i>
+        </div>
+        <div
+          id="3"
+          class="items w-full flex justify-between items-center cursor-pointer"
+        >
+          <h4 id="label3" class="check">Daily UI practice</h4>
+          <i
+            id="icon3"
+            class="fa-regular fa-circle-check tick cursor-pointer"
+          ></i>
+        </div>
+        <div
+          id="4"
+          class="items w-full flex justify-between items-center cursor-pointer"
+        >
+          <h4 id="label4" class="item">Driving practice</h4>
+          <i
+            id="icon4"
+            class="fa-regular fa-circle clickable cursor-pointer"
+          ></i>
+        </div>
+        <div
+          id="5"
+          class="items w-full flex justify-between items-center cursor-pointer"
+        >
+          <h4 id="label5" class="item">Water flowers</h4>
+          <i
+            id="icon5"
+            class="fa-regular fa-circle clickable cursor-pointer"
+          ></i>
+        </div>
+        <div
+          id="6"
+          class="items w-full flex justify-between items-center cursor-pointer"
+        >
+          <h4 id="label6" class="item">Upload PSD files to Dropbox</h4>
+          <i
+            id="icon6"
+            class="fa-regular fa-circle clickable cursor-pointer"
+          ></i>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center h-[60px] w-[60px] rounded-full bg-[#a7c4e3] mt-5 ml-[210px]"
+      >
+        <i class="fa-solid fa-plus text-white text-2xl"></i>
+      </div>
+    </div>
+  </body>
+</html>

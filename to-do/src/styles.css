@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.check {
+  @apply line-through text-gray-400 font-semibold text-[14px];
+}
+
+.tick {
+  @apply text-green-400 text-2xl;
+}
+
+.item {
+  @apply text-gray-800 font-semibold text-[14px];
+}
+
+.clickable {
+  @apply text-gray-300 text-2xl;
+}
