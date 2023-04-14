@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.short-text {
+  @apply text-center  text-xs;
+}

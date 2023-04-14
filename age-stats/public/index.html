@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Stats</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body class="h-screen w-screen flex items-center justify-center bg-[#403534]">
+    <!-- card -->
+    <div
+      class="w-[500px] bg-[#4a3f3e] shadow-md shadow-[#3d3130] rounded-md p-10 flex flex-col gap-7"
+    >
+      <h2 class="text-gray-200 text-3xl">Age</h2>
+      <!-- bars -->
+      <div class="flex justify-between items-center">
+        <!-- bar -->
+        <div class="flex flex-col gap-0.5 items-center justify-center">
+          <h5 id="percentage-1" class="text-center text-[#d3cbc9] text-xs"></h5>
+          <div class="relative w-[60px] h-[120px] bg-[#433837] rounded-md">
+            <div
+              id="bar-1"
+              class="w-full rounded-b-md bg-[#d7634f] absolute bottom-0"
+            ></div>
+          </div>
+          <h5 class="text-center text-[#ffffff] text-xs">18-24</h5>
+        </div>
+        <div class="flex flex-col gap-0.5 items-center justify-center">
+          <h5 id="percentage-2" class="text-center text-[#d3cbc9] text-xs"></h5>
+          <div class="relative w-[60px] h-[120px] bg-[#433837] rounded-md">
+            <div
+              id="bar-2"
+              class="w-full rounded-b-md bg-[#d7634f] absolute bottom-0"
+            ></div>
+          </div>
+          <h5 class="text-center text-[#ffffff] text-xs">25-34</h5>
+        </div>
+        <div class="flex flex-col gap-0.5 items-center justify-center">
+          <h5 id="percentage-3" class="text-center text-[#d3cbc9] text-xs"></h5>
+          <div class="relative w-[60px] h-[120px] bg-[#433837] rounded-md">
+            <div
+              id="bar-3"
+              class="w-full rounded-b-md bg-[#d7634f] absolute bottom-0"
+            ></div>
+          </div>
+          <h5 class="text-center text-[#ffffff] text-xs">35-44</h5>
+        </div>
+        <div class="flex flex-col gap-0.5 items-center justify-center">
+          <h5 id="percentage-4" class="text-center text-[#d3cbc9] text-xs"></h5>
+          <div class="relative w-[60px] h-[120px] bg-[#433837] rounded-md">
+            <div
+              id="bar-4"
+              class="w-full rounded-b-md bg-[#d7634f] absolute bottom-0"
+            ></div>
+          </div>
+          <h5 class="text-center text-[#ffffff] text-xs">45-54</h5>
+        </div>
+        <div class="flex flex-col gap-0.5 items-center justify-center">
+          <h5 id="percentage-5" class="text-center text-[#d3cbc9] text-xs"></h5>
+          <div class="relative w-[60px] h-[120px] bg-[#433837] rounded-md">
+            <div
+              id="bar-5"
+              class="w-full rounded-b-md bg-[#d7634f] absolute bottom-0"
+            ></div>
+          </div>
+          <h5 class="text-center text-[#ffffff] text-xs">65+</h5>
+        </div>
+      </div>
+      <h5 class="text-center text-[#938b8a] text-xs">100% of total sessions</h5>
+    </div>
+  </body>
+</html>
